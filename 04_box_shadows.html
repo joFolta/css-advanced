@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Shadows</title>
+  <style>
+    .container {
+      display: flex;
+    }
+
+    .base-box {
+      padding: 1rem;
+      margin: 2rem 1rem;
+      background: coral;
+      color: #fff;
+    }
+
+    .boxes-1 {
+      /* offset-x | offset-y | color */
+      box-shadow: 10px 10px teal;
+    }
+
+    .boxes-2 {
+      /* offset-x | offset-y | blur-radius | color */
+      box-shadow: 10px 10px 20px teal;
+    }
+
+    .boxes-3 {
+      /* Negative values */
+      box-shadow: -15px -15px 0px rgba(0, 0, 0, 0.9);;      
+    }
+
+    .boxes-4 {
+      /* offset-x | offset-y | blur-radius | spread-radius | color */
+      box-shadow: -15px -15px 0px 6px rgba(0, 0, 0, 0.9);
+    }
+
+    .boxes-5 {
+      /* inset | offset-x | offset-y | color */
+      box-shadow: inset -10px -10px teal;
+    }
+
+    .boxes-6 {
+      /* Multiple Shadows */
+      box-shadow: 10px 10px teal, -10px -10px olive;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="base-box boxes-1">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, aliquam.</p>
+    </div>
+    <div class="base-box boxes-1">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, aliquam.</p>
+    </div>
+    <div class="base-box boxes-1">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, aliquam.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="base-box boxes-2">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, aliquam.</p>
+    </div>
+    <div class="base-box boxes-2">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, aliquam.</p>
+    </div>
+    <div class="base-box boxes-2">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, aliquam.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="base-box boxes-3">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, aliquam.</p>
+    </div>
+    <div class="base-box boxes-3">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, aliquam.</p>
+    </div>
+    <div class="base-box boxes-3">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, aliquam.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="base-box boxes-4">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, aliquam.</p>
+    </div>
+    <div class="base-box boxes-4">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, aliquam.</p>
+    </div>
+    <div class="base-box boxes-4">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, aliquam.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="base-box boxes-5">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, aliquam.</p>
+    </div>
+    <div class="base-box boxes-5">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, aliquam.</p>
+    </div>
+    <div class="base-box boxes-5">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, aliquam.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="base-box boxes-6">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, aliquam.</p>
+    </div>
+    <div class="base-box boxes-6">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, aliquam.</p>
+    </div>
+    <div class="base-box boxes-6">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, aliquam.</p>
+    </div>
+  </div>
+</body>
+</html>
